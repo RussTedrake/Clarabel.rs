@@ -68,3 +68,6 @@ pub mod python;
 
 #[cfg(feature = "julia")]
 pub mod julia;
+
+//#[cfg(feature = "c")]
+pub mod c;

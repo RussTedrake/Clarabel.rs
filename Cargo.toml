@@ -145,7 +145,7 @@ features = ["extension-module", "abi3-py37"]
 name = "clarabel"
 # "cdylib" is necessary to produce a shared libraries for Python/Julia
 # "lib" is necessary to allow the ./examples to build
-crate-type = ["lib","cdylib"] 
+crate-type = ["lib","cdylib","staticlib"] 
 
 
 # ------------------------------

@@ -25,6 +25,7 @@ fn main() {
     ]);
 
     let b = vec![1.; 4];
+    println!("b = {:?}", b);
 
     let cones = [NonnegativeConeT(4)];
 

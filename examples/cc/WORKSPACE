@@ -1,0 +1,6 @@
+
+new_local_repository(
+    name = "clarabel",
+    build_file = "clarabel.BUILD.bazel",
+    path = "../..",
+)

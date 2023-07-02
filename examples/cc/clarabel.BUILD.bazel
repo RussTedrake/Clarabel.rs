@@ -1,0 +1,15 @@
+
+cc_import(
+  name = "clarabel-private",
+  hdrs = glob(["src/c/include/*.h"]),
+  static_library = "target/debug/libclarabel.a",
+)
+
+# https://github.com/bazelbuild/bazel/issues/4748
+cc_library(
+  name = "clarabel",
+  hdrs = glob(["src/c/include/*.h"]),
+  includes = ["src/c/include"],
+  deps = [":clarabel-private"],
+  visibility = ["//visibility:public"],
+)
