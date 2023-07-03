@@ -1,0 +1,9 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+  name = "clarabel",
+  hdrs = ["clarabel.h", "solver.h"],
+  srcs = ["solver.cc"],
+  deps = ["//src/cc/ffi:clarabel-ffi", "@eigen3//:lib",],
+  visibility = ["//visibility:public"],
+)

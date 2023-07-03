@@ -8,3 +8,10 @@ notes*.txt
 /dist
 __pycache__
 *.so*
+bazel-bin
+
+bazel-Clarabel.rs
+
+bazel-out
+
+bazel-testlogs

@@ -8,6 +8,9 @@ extern "C" {
 #include <stddef.h>
 #endif
 
+namespace clarabel {
+namespace ffi {
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -25,3 +28,6 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
+
+}  // namespace ffi
+}  // namespace clarabel
